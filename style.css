@@ -67,12 +67,39 @@ body{
 
 /* Food menu card style*/
 
+.explore__menu__container{
+    margin-top: 50px;
+}
+.explore__menu__text{
+    font-size: 30px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
 .food__menu__card{
     width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .food__image{
     width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.food__menu__card__description{
+    padding: 20px;
+}
+
+.food__menu__list{
+    display: inline;
+}
+
+
+.explore__menu__view__more{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -96,6 +123,33 @@ body{
     .button__primary{
         padding: 12px 20px;
     }
+    .explore__menu__list{
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+    }
+    #pizzaa{
+        margin-top: -25px;
+        margin-bottom: 25px;
+    }
+    .explore__menu__container{
+        position: relative;
+    }
+    .explore__menu__gradient__bg{
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+            );
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index:-3;
+        transform: skewY(-5deg);
+    }
 }
 
 @media (min-width: 1020px){
@@ -104,6 +158,13 @@ body{
     }
     
     .hero__text{
+        font-size: 50px;
+    }
+    .explore__menu__list{
+        gap: 25px;
+        padding: 0px 20px;
+    }
+    .explore__menu__text{
         font-size: 50px;
     }
 
