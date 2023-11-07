@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
 }
 
-.button_primary{
+.button__primary{
     background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -22,6 +22,7 @@ body{
     padding: 12px;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .navbar{
@@ -46,8 +47,6 @@ body{
 
 .hero__container{
     width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
@@ -57,9 +56,25 @@ body{
     width: 100%;
 }
 
-.hero_image{
+.hero__image{
     width: 100%;
 }
+
+.hero__text{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+/* Food menu card style*/
+
+.food__menu__card{
+    width: 100%;
+}
+
+.food__image{
+    width: 100%;
+}
+
 
 
 @media (min-width: 768px){
@@ -70,24 +85,34 @@ body{
     .navbar__brand{
         width: 150px;
     }
-    .nav_item{
+    .nav__item{
         padding: 20px;
         font-size: 20px;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .button__primary{
+        padding: 12px 20px;
     }
 }
 
 @media (min-width: 1020px){
     .container{
-        max-width: 1010px;
+        max-width: 990px;
     }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
+    
+    .hero__text{
+        font-size: 50px;
     }
 
 }
 
 @media (min-width: 1400px){
+    .container{
+        max-width: 1250px;
+    }
 
 
 }
